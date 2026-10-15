@@ -1,0 +1,7 @@
+data/raw/
+data/lake/
+spark-warehouse/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.venv/

@@ -1,0 +1,20 @@
+[project]
+name = "spark-parquet-etl"
+version = "0.1.0"
+description = "PySpark batch ETL over market trades with partitioned Parquet and performance tuning"
+requires-python = ">=3.10"
+dependencies = ["pyspark>=4.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
